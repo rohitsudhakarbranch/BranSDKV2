@@ -795,5 +795,6 @@ function CreateDeepLink(){
      branch.link(linkData, function(err, link) {
        console.log(link);
        document.getElementById("Output_Button2").innerHTML = link;
+       document.getElementById('Output_Button2').href = link  
      });
    }
