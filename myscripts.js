@@ -770,6 +770,8 @@ function ReadDeepLink(){
 branch.data(function(err, data) {
     console.log(err, data);
     document.getElementById("Output_Button2").innerHTML = data.channel;
+    document.getElementById('Output_Button2').href = link
+    
   });
 }
 // Create Deeplink
